@@ -8,7 +8,7 @@ function App() {
 	const [data, setData] = useState(null);
 
 	useEffect(() => {
-		d3.json("./flare-2.json").then(data => setData(data));
+		d3.json("flare-2.json").then(console.log(data));
 	}, []);
 
 	const getNewNode = () => ({ name: "" + Math.random(), children: [] });
